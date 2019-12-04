@@ -2,6 +2,7 @@ from nlg.framework.ElementCategory import ElementCategory
 
 from enum import Enum
 
+
 class LexicalCategory(ElementCategory):
 
     class LexicalCategoryEnum(Enum):
