@@ -1,19 +1,19 @@
-from nlg.features.Feature import Feature
-from nlg.features.Gender import Gender
-from nlg.features.InternalFeature import InternalFeature
-from nlg.features.LexicalFeature import LexicalFeature
-from nlg.features.NumberAgreement import NumberAgreement
-from nlg.features.Person import Person
-from nlg.lexicon.Lexicon import Lexicon
-from nlg.phrasespec.AdjPhraseSpec import AdjPhraseSpec
-from nlg.phrasespec.AdvPhraseSpec import AdvPhraseSpec
-from nlg.phrasespec.NPPhraseSpec import NPPhraseSpec
-from nlg.phrasespec.PPPhraseSpec import PPPhraseSpec
-from nlg.phrasespec.SPhraseSpec import SPhraseSpec
-from nlg.phrasespec.VPPhraseSpec import VPPhraseSpec
-from nlg.framework.NLGElement import NLGElement
-from nlg.framework.PhraseElement import PhraseElement
-from nlg.framework.LexicalCategory import LexicalCategory
+from pynlg.features.Feature import Feature
+from pynlg.features.Gender import Gender
+from pynlg.features.InternalFeature import InternalFeature
+from pynlg.features.LexicalFeature import LexicalFeature
+from pynlg.features.NumberAgreement import NumberAgreement
+from pynlg.features.Person import Person
+from pynlg.lexicon.Lexicon import Lexicon
+from pynlg.phrasespec.AdjPhraseSpec import AdjPhraseSpec
+from pynlg.phrasespec.AdvPhraseSpec import AdvPhraseSpec
+from pynlg.phrasespec.NPPhraseSpec import NPPhraseSpec
+from pynlg.phrasespec.PPPhraseSpec import PPPhraseSpec
+from pynlg.phrasespec.SPhraseSpec import SPhraseSpec
+from pynlg.phrasespec.VPPhraseSpec import VPPhraseSpec
+from pynlg.framework.NLGElement import NLGElement
+from pynlg.framework.PhraseElement import PhraseElement
+from pynlg.framework.LexicalCategory import LexicalCategory
 
 from typing import Union, List, Any
 

@@ -1,5 +1,5 @@
-from nlg.lexicon.Lexicon import Lexicon
-from nlg.framework.NLGElement import NLGElement
+from pynlg.lexicon.Lexicon import Lexicon
+from pynlg.framework.NLGElement import NLGElement
 
 from typing import Union, List
 

@@ -1,12 +1,12 @@
-from nlg.features.ClauseStatus import ClauseStatus
-from nlg.features.DiscourseFunction import DiscourseFunction
-from nlg.features.Feature import Feature
-from nlg.features.InternalFeature import InternalFeature
-from nlg.framework.NLGFactory import NLGFactory
-from nlg.framework.NLGElement import NLGElement
-from nlg.framework.StringElement import StringElement
-from nlg.framework.PhraseCategory import PhraseCategory
-from nlg.phrasespec.NPPhraseSpec import NPPhraseSpec
+from pynlg.features.ClauseStatus import ClauseStatus
+from pynlg.features.DiscourseFunction import DiscourseFunction
+from pynlg.features.Feature import Feature
+from pynlg.features.InternalFeature import InternalFeature
+from pynlg.framework.NLGFactory import NLGFactory
+from pynlg.framework.NLGElement import NLGElement
+from pynlg.framework.StringElement import StringElement
+from pynlg.framework.PhraseCategory import PhraseCategory
+from pynlg.phrasespec.NPPhraseSpec import NPPhraseSpec
 
 from typing import List, Union
 

@@ -1,4 +1,4 @@
-from nlg.framework.ElementCategory import ElementCategory
+from pynlg.framework.ElementCategory import ElementCategory
 
 from enum import Enum
 

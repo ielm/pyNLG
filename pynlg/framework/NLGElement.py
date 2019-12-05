@@ -1,8 +1,8 @@
-from nlg.features.Feature import Feature
-from nlg.features.NumberAgreement import NumberAgreement
-from nlg.features.Tense import Tense
-from nlg.framework.ElementCategory import ElementCategory
-from nlg.framework.NLGFactory import NLGFactory
+from pynlg.features.Feature import Feature
+from pynlg.features.NumberAgreement import NumberAgreement
+from pynlg.features.Tense import Tense
+from pynlg.framework.ElementCategory import ElementCategory
+from pynlg.framework.NLGFactory import NLGFactory
 
 from typing import Any
 
