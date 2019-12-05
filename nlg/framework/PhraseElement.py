@@ -19,7 +19,7 @@ class PhraseElement(NLGElement):
         if self._features is None:
             self.set_feature(Feature.ELIDED, False)
 
-    def get_children(self) -> List[NLGElement]:  # TODO - Implement
+    def get_children(self) -> List[NLGElement]:
         pass
 
     def set_head(self, new_head: Union[str, NLGElement, StringElement] = None):
