@@ -4,7 +4,7 @@ from nlg.features.Tense import Tense
 from nlg.framework.ElementCategory import ElementCategory
 from nlg.framework.NLGFactory import NLGFactory
 
-from typing import Any, List
+from typing import Any
 
 
 class NLGElement:
@@ -13,6 +13,8 @@ class NLGElement:
         self._category = category
         self._features = features
         self._factory = factory
+
+        self._parent = NLGElement()
 
     def set_category(self, category: ElementCategory):
         self._category = category
@@ -74,26 +76,95 @@ class NLGElement:
 
         return values
 
-    # TODO
-    #     [] - Implement get feature for long
-    #     [] - Implement get feature for float
-    #     [] - Implement get feature for double
-    #     [] - Implement get feature for bool
-    #     [] - Implement get feature for element
-    #     [] - Implement get feature for all features
+    def get_feature_as_long(self, feature_name: str = None):
+        pass
 
+    def get_feature_as_float(self, feature_name: str = None):
+        pass
 
+    def get_feature_as_double(self, feature_name: str = None):
+        pass
 
+    def get_feature_as_bool(self, feature_name: str = None):
+        pass
 
+    def get_feature_as_element(self, feature_name: str = None):
+        pass
 
+    def get_all_features(self):
+        pass
 
+    def has_feature(self, feature_name: str = None) -> bool:
+        pass
 
+    def remove_feature(self, feature_name: str = None):
+        pass
 
+    def clear_all_features(self):
+        self._features = {}
 
+    def set_parent(self, new_parent: 'NLGElement' = None):
+        self._parent = new_parent
+        pass
 
+    def get_parent(self) -> 'NLGElement':
+        return self._parent
 
+    def set_realization(self, realized: str = None):
+        pass
 
+    def get_realization(self):
+        pass
 
+    def to_string(self):
+        pass
 
+    def is_a(self, category: ElementCategory = None) -> bool:
+        pass
 
+    def get_chidren(self):
+        raise NotImplemented
 
+    def get_all_feature_names(self):
+        return self._features.keys()
+
+    def print_tree(self, indent: str = None):
+        pass
+
+    def set_plural(self, is_plural: bool = None):
+        if is_plural:
+            self.set_feature(Feature.NUMBER, NumberAgreement.PLURAL)
+        else:
+            self.set_feature(Feature.NUMBER, NumberAgreement.SINGULAR)
+
+    def is_plural(self) -> bool:
+        return NumberAgreement.PLURAL == self.get_feature(Feature.NUMBER)
+
+    def get_tense(self):
+        pass
+
+    @DeprecationWarning
+    def get_tense(self):
+        pass
+
+    @DeprecationWarning
+    def set_tense(self, tense: Tense = None):
+        if tense is not None:
+            self.set_feature(Feature.TENSE, tense)
+
+    @DeprecationWarning
+    def set_negated(self, is_negated: bool = None):
+        pass
+
+    @DeprecationWarning
+    def is_negated(self):
+        pass
+
+    def get_factory(self):
+        return self._factory
+
+    def set_factory(self, factory: NLGFactory):
+        self._factory = factory
+
+    def __eq__(self, element_realization):
+        pass
